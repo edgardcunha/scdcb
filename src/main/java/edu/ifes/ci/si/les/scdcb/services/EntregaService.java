@@ -104,10 +104,10 @@ public class EntregaService {
 		}
 	}
 
-	public Collection<Entrega> findAllByBeneficiado(Integer cdBeneficiado) {
+	/*public Collection<Entrega> findAllByBeneficiado(Integer cdBeneficiado) {
 		Beneficiado beneficiado = beneficiadoRepository.findById(cdBeneficiado).get();
 		return entregaRepository.findAllByBeneficiado(beneficiado);
-	}
+	}*/
 
 	/*public Collection<Emprestimo> findByClienteAndPeriodo(Integer idCliente, String inicio, String termino) {
 		return emprestimoRepository.findByClienteAndPeriodo(idCliente, inicio, termino);

@@ -13,8 +13,8 @@ import edu.ifes.ci.si.les.scdcb.model.Entrega;
 @Repository
 public interface EntregaRepository extends JpaRepository<Entrega, Integer> {
 	
-    @Transactional(readOnly = true)
-    public Collection<Entrega> findAllByBeneficiado(Beneficiado beneficiado);
+    //@Transactional(readOnly = true)
+    //public Collection<Entrega> findAllByBeneficiado(Beneficiado beneficiado);
 
     @Transactional(readOnly = true)
     public Entrega findByCdEntrega(Integer cdEntrega);

@@ -57,10 +57,4 @@ public class EntregaController {
         return ResponseEntity.noContent().build();
     }
 
-    @RequestMapping(value = "/relatorio/{cdBeneficiado}", method = RequestMethod.GET)
-    public ResponseEntity<Collection<Entrega>> findAllByBeneficiado(@PathVariable Integer cdBeneficiado) {
-        Collection<Entrega> collection = service.findAllByBeneficiado(cdBeneficiado);
-        return ResponseEntity.ok().body(collection);
-    }
-
 }

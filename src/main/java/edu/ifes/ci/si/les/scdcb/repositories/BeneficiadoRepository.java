@@ -15,6 +15,9 @@ public interface BeneficiadoRepository extends JpaRepository<Beneficiado, Intege
 	//@Transactional(readOnly = true)
 	//public Beneficiado findByLoginAndSenha(String login, String senha);
 
+    //@Transactional(readOnly = true)
+    //public Beneficiado findById();
+
     @Transactional(readOnly = true)
     @Query(value = "SELECT beneficiados.*, usuarios.* "
                    + "FROM solicitacoes "
