@@ -6,7 +6,7 @@ import javax.validation.constraints.*;
 import lombok.*;
 
 @Entity
-@Table(name = "tipos_cesta")
+@Table(name = "tipos_cestas")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
